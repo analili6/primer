@@ -7,28 +7,28 @@
 % De uso: octava> / ruta / f_constante
 % Notas: Requiere aplicacion octava usar en consola preferiblemente
 
-%       f (x) = a
+% C (f) = ((f * 5) / 9) +32
 % si se graficá su comportamiento es lineal
-%       ^
-%     y |
-%       |   
-%       | ____
-%       |
-%       | _____> x
+% ^
+% y |
+% |   
+% | ____________
+% | 
+% | _____________> x
 %
 
 % limpiar variables
- claro
+ clear
 % Ejemplo f (x) = a
-% Rango de -10..10 en i = 1
-x = - 10 : 1 : 10 ;
-% Valor de la función
-y = 0,45 ;
+% Rango de -212..212 en i = 0.2
+ f = -212: 0,2: 212; 
+% Valor de la función 
+ C = ((f * 5) / 9) +32; 
 % Dibujar x, y
- plot (x, y);
+ plot(f, C);
 % Titulo
-título ( " f (x) = a " );
+ title("C (f) = ((f * 5) / 9) +32");
 % Etiqueta para x
-xlabel ( " x " );
+ xlabel ("FARENHEIT");
 % Etiqueta para y
-ylabel ( " f (x) " );
+ ylabel ("CENTOGRADOS");
